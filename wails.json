@@ -6,6 +6,9 @@
   "frontend:build": "npm run build",
   "frontend:dev:watcher": "npm run dev",
   "frontend:dev:serverUrl": "auto",
+  "debug":{
+    "openInspectorOnStartup":true
+  },
   "author": {
     "name": "Harikrishnan-Ashok",
     "email": "harikrishnanashok2001@gail.com"
