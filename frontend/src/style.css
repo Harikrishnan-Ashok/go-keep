@@ -11,3 +11,7 @@ body {
 #app {
     height: 100vh;
 }
+html, body {
+    overflow: hidden; /* Prevent scrolling */
+    height: 100%; /* Ensure full height */
+}

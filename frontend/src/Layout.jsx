@@ -4,17 +4,19 @@ import Navbar from "./components/Navbar";
 import {Stack} from "@mui/material";
 export default function Layout(){
 
-  const [showDrawer,setShowDrawer]=useState(false)
+  const [showDrawer,setShowDrawer]=useState(true)
 
   return(<>
    <Navbar setShowDrawer={setShowDrawer} ></Navbar>  
    <Stack direction={"row"} >
     {showDrawer &&  
-     <Stack>
-        <h6>hello</h6>
+     <Stack sx={{backgroundColor:"blue"}} minWidth={250} height={"94vh"} >
+      <h1>hello</h1>
      </Stack>
     }
-      <Outlet></Outlet>      
+    <Stack>
+     <Outlet></Outlet> 
+    </Stack>
    </Stack>
   </>)
 }
